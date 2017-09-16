@@ -52,18 +52,18 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="/">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">About</a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
               <a class="nav-link" href="#">Services</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -87,11 +87,12 @@
         </div>
         <div class="col-md-5">
           <h3>Starbucks Location Density: 1991-2017</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+          <p>This Leaflet map uses hexbinning to convey Starbucks location density. Hexbins are redrawn to make them appropriate to zoom level.</p>
           <ul>
             <li>Data Source(s): <a href='http://www.starbuckseverywhere.net/StoreOpeningDates.htm'>Starbuckseverywhere.net</a></li>
             <li>
               Platforms:
+              <a href='https://www.python.org/'>Python</a>,
               <a href='http://leafletjs.com/'>Leaflet.js</a>,
               <a href='http://geojson.org/'>Geojson</a>
             </li>
@@ -114,13 +115,15 @@
         </div>
         <div class="col-md-5">
           <h3>Colorado Oil and Gas Maps</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+          <p>These Leaflet maps show the progression and density of Oil and Gas wells in Colorado.</p>
           <ul>
-            <li>Blog post describing process and map reaction: <a href="https://gameofgis.com/2015/12/12/colorado-oilgas-wells/">Colorado Oil/Gas Wells Over Time</a></li>
+            <li>Detailed blog post describing process and reaction: <a href="https://gameofgis.com/2015/12/12/colorado-oilgas-wells/">Colorado Oil/Gas Wells Over Time</a></li>
             <li>
               Platforms:
+              <a href='https://www.python.org/'>Python</a>,
               <a href='https://www.postgresql.org/'>PostgreSQL</a>,
-              <a href='http://postgis.net/'>PostGIS</a>
+              <a href='http://postgis.net/'>PostGIS</a>,
+              <a href='http://leafletjs.com/'>Leaflet.js</a>
             </li>
             <li>See the <a href='https://github.com/FergusDevelopmentLLC/oil-gas'>github repo</a> for details</li>
           </ul>
@@ -141,11 +144,12 @@
         </div>
         <div class="col-md-5">
           <h3>U.S. Billboard #1 Hit Singles 1970-1979</h3>
-          <p>This project involved building a full web stack from database to front end. Static geojson, PostGIS, and MongoDB queries are compared to deliver large geospatial datasets.</p>
+          <p>Choropleth map showing the U.S. Billboard #1 hit singles by artist origin city between 1970-1979. Python script was written to scrape web sources and create local datasets.</p>
           <ul>
               <li>Data Sources: <a href="http://www.umdmusic.com/">Ultimate Music Database</a>, <a href="https://www.wikipedia.org/">Wikipedia</a>, <a href="https://www.census.gov/">U.S. Census</a>, <a href="http://www.noaa.gov/">NOAA</a>, <a href="http://www.naturalearthdata.com/">Natural Earth</a></li>
               <li>
-                Platform: <a href='https://carto.com/'>Carto</a>
+                Platforms: <a href='https://carto.com/'>Carto</a>,
+                <a href='https://www.python.org/'>Python</a>
               </li>
           </ul>
           <a class="btn btn-primary" href="https://willcarteruky.carto.com/builder/3f81fefc-17d4-11e7-80ee-0e3ff518bd15/embed">Map</a>
@@ -164,7 +168,7 @@
         </div>
         <div class="col-md-5">
           <h3>Iowa Is Blacked Out</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+          <p>This Leaflet based map shows Major League Baseballs blackout areas. Various scripting and web scraping techniques were used collect and create data for this map.</p>
           <ul>
               <li>Blog post describing process: <a href="https://gameofgis.com/2016/01/25/iowa-is-blacked-out/">Game of GIS: Iowa is blacked out</a></li>
               <li>
