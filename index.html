@@ -1,131 +1,242 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Will Carter: Web Mapping Portfolio</title>
-<meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 
-<style>
-body {
-    background: #f5f5f5;
-}
-header {
-    width: 100%;
-    min-width: 800px;
-    margin: 0 auto;
-    background: #8C0F09;
-    padding: 15px 0 20px;
-}
-h1 {
-    color: #375671;
-    width: 80%;
-    margin: 0 auto;
-    color: whitesmoke;
-    font-family: 'Roboto', serif;
-}
-h2 {
-    color: #375671;
-    width: 80%;
-    margin: 0 auto;
-    color: whitesmoke;
-    font-family: 'Roboto', serif;
-}
-h3 {
-    font-family: Dosis, sans-serif;
-    color: #003d71;
-    font-family: 'Roboto Condensed', serif;
-}
-p {
-    font-size: .9em;
-    color: #375671;
-}
-ul {
-    list-style-type: none;
-    font-size: .9em;
-    color: #375671;
-    line-height: 1.6em;
-}
-a, a:visited {
-    color: #003d71;
-}
-.project {
-    width: 80%;
-    min-width: 800px;
-    height: 100%;
-    margin: 35px auto;
-}
-.project:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-.project-image {
-    width: 388px;
-    height: 240px;
-    background: white;
-    float: left;
-    margin-right: 20px;
-    border: 2px solid #dddddd;
-}
-</style>
-</head>
-<body>
-<header>
-  <h1>GeoDev Web Portfolio 2017</h1>
-  <h2>Will Carter</h2>
-</header>
-<section class="project">
-    <img class="project-image" src="http://storage7.static.itmages.com/i/17/0724/h_1500857555_1156091_bcbc7cf0f5.png" alt="Rio Grande National Forest Subsurface Mineral Rights" />
-    <h3>United States Federal Lands (GeoDev Web Stack)</h3>
-    <p>This project involved building a full web stack from database to Vue.js front end. Static geojson, PostGIS, and MongoDB queries are compared to deliver intricate geospatial datasets. Web server based on Node.js and supporting libraries. For full details, see the <a href='https://github.com/FergusDevelopmentLLC/geodev-node-rest'>github repo</a>.</p>
-    <ul>
-        <li>See the map: <a target = '_blank' href="http://104.236.16.91:8641/">United States Federal Lands</a></li>
-        <li>Github: <a target = '_blank' href='https://github.com/FergusDevelopmentLLC/geodev-node-rest'>https://github.com/FergusDevelopmentLLC/geodev-node-rest</a>
-        <li>Data Source(s): <a href='https://catalog.data.gov/dataset/federal-lands-of-the-united-states-direct-download'>Data.gov</a></a>
-          <li>Technologies/Platforms: <a href='https://www.postgresql.org/'>PostgreSQL</a>, <a href='http://postgis.net/'>PostGIS</a>, <a href='https://www.mongodb.com/'>MongoDB</a>, <a href='https://en.wikipedia.org/wiki/Representational_state_transfer'>REST API</a>, <a href='http://geojson.org/'>GeoJSON</a>, <a href='https://nodejs.org'>Node.js</a>, <a href='https://www.npmjs.com/'>NPM</a>, <a href='https://expressjs.com/'>Express.js</a>, <a href='http://knexjs.org/'>Knex.js</a>, <a href='http://mongoosejs.com/'>Mongoose.js</a>, <a href='https://github.com/hapijs/joi'>Joi.js</a>, <a href='http://getbootstrap.com/'>Bootstrap</a>, <a href='https://vuejs.org/'>Vue.js</a>, <a href='https://www.virtualbox.org/'>Oracle VirtualBox</a></li>
-    </ul>
-</section>
-<section class="project">
-    <img class="project-image" src="http://storage8.static.itmages.com/i/17/0723/h_1500851444_2236033_ed45305211.png" alt="U.S. Billboard #1 hit singles 1970-1979" />
-    <h3>U.S. Billboard #1 hit singles 1970-1979</h3>
-    <p>Choropleth map showing the U.S. Billboard #1 hit singles by artist origin city between 1970-1979. Python script was written to scrape web sources and create local datasets.</p>
-    <ul>
-        <li>See the map: <a target = '_blank'  href="https://willcarteruky.carto.com/builder/3f81fefc-17d4-11e7-80ee-0e3ff518bd15">U.S. Billboard #1 hit singles 1970-1979</a></li>
-        <li>Data Sources: <a href='http://www.umdmusic.com/'>Ultimate Music Database</a>, <a href='https://www.wikipedia.org/'>Wikipedia</a>, <a href='https://www.census.gov/'>U.S. Census</a>, <a href='http://www.noaa.gov/'>NOAA</a>, <a href='http://www.naturalearthdata.com/'>Natural Earth</a></li>
-        <li>Technologies/Platforms: <a href='http://www.qgis.org'>QGIS</a>, <a href='https://carto.com/'>Carto</a>, <a href='http://postgis.net/'>PostGIS</a> geospatial queries, <a href='https://www.python.org/'>Python</a>
-    </ul>
-</section>
-<section class="project">
-    <img class="project-image" src="http://storage9.static.itmages.com/i/17/0724/h_1500854676_6896808_a5e39b879b.png" alt="Average U.S. Monthly Rent by County (2015)" />
-    <h3>Average U.S. Monthly Rent by County (2015)</h3>
-    <p>Choropleth map showing Average U.S. Monthly Rent by County.</p>
-    <ul>
-        <li>See the map: <a target = '_blank' href="https://fergusdevelopmentllc.github.io/monthly-rent-by-county/">Average U.S. Monthly Rent by County (2015)</a></li>
-        <li>Data source: <a href='https://www.census.gov/'>U.S. Census</a></li>
-        <li>Technologies/Platforms: <a href='http://geojson.org/'>GeoJson</a>, <a href='http://leafletjs.com/'>Leaflet.js</a></li>
-    </ul>
-</section>
-<section class="project">
-    <img class="project-image" src="http://storage5.static.itmages.com/i/17/0723/h_1500854178_2933957_241b796116.png" alt="Power Plants of the United States: Coal, Hydro and Solar" />
-    <h3>Power Plants of the United States: Coal, Hydro and Solar</h3>
-    <p>Proportional symbol map comparing three major types of power plant in the United States.</p>
-    <ul>
-        <li>See the map: <a target = '_blank'  href="https://fergusdevelopmentllc.github.io/us-powerplants/">Power Plants of the United States: Coal, Hydro and Solar</a></li>
-        <li>Data Sources: <a href='http://www.eia.gov/electricity/data/eia923/'>U.S. Department of Energy</a></li>
-        <li>Technologies/Platforms: <a href='http://geojson.org/'>GeoJson</a>, <a href='http://leafletjs.com/'>Leaflet.js</a></li>
-    </ul>
-</section>
-<section class="project">
-    <img class="project-image" src="http://storage1.static.itmages.com/i/17/0723/h_1500851574_7967968_d80dabe92a.png" alt="Rio Grande National Forest Subsurface Mineral Rights" />
-    <h3>Rio Grande National Forest Subsurface Mineral Rights</h3>
-    <p>Highlights areas within the Rio Grande National forest that have no subsurface mineral rights. This is a traditional static PDF map created in Arc Desktop, prepared for <a href='rockymountainwild.org'>Rocky Mountain Wild</a>.</p>
-    <p>Tecnologies/Platforms: <a href='http://desktop.arcgis.com/en/arcmap/'>ArcMap</a>, GIS</p>
-    <ul>
-        <li>See the map: <a target = '_blank' href="http://s3.amazonaws.com/gameofgis.com/posts/20151202_RGNF_subsurface_minerals/assets/RGNF_subsurface_mineral_rights_20151117_v3.pdf">Rio Grande National Forest Subsurface Mineral Rights</a></li>
-        <li>Data Source(s): <a href='https://www.blm.gov/'>Bureau of Land Management</a>, <a href='http://cpw.state.co.us/'>Colorado Parks and Wildlife</a>, <a href='https://www.fs.fed.us/'>United States Forest Service</a>, <a href='http://www.wilderness.net/NWPS/geography'>Wilderness.net</a>
-    </ul>
-</section>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Will Carter: Geodevelopment and Web Mapping Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: 'Arimo', sans-serif;
+      }
+
+      h3 {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: .9em;
+      }
+
+      li {
+        font-size: .8em;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Web Mapping / Development Portfolio - Will Carter</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading -->
+      <!-- <h1 class="my-4">Page Heading
+        <small>Secondary Text</small>
+      </h1> -->
+
+      <hr>
+
+      <!-- Project One -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="http://104.236.16.91:8645/names/d3/">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/names_700x300.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Popular U.S. Names of the Last Century (1910-2016)</h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+          <ul>
+              <li>Data Source: <a href='https://www.ssa.gov/oact/babynames/limits.html'>U.S. Social Security Administration</a></li>
+              <li>
+                Platforms:
+                <a href='https://www.postgresql.org/'>D3.js</a>,
+                <a href='http://postgis.net/'>SQL/PostGIS</a>,
+                <a href='https://www.python.org/'>Python</a>,
+                <a href='https://www.w3.org/Graphics/SVG/'>SVG</a>,
+                <a href='https://github.com/topojson/topojson'>Topojson</a>,
+                <a href='https://nodejs.org'>Node.js</a>
+              </li>
+              <li>See the <a href='https://github.com/FergusDevelopmentLLC/names-map-node'>github repo</a> for full details</li>
+          </ul>
+          <a class="btn btn-primary" href="http://104.236.16.91:8645/names/d3/" target="_blank">Map</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Two -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="http://104.236.16.91:8650/us-weekly-drought-conditions/">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/drought_v5.gif" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>U.S. 2017 Weekly Drought Conditions</h3>
+          <p>Duis posuere facilisis diam, vitae efficitur diam dapibus malesuada. Cras gravida nulla placerat, elementum erat ac, tincidunt ipsum. Vestibulum blandit elit vel sapien tincidunt luctus.</p>
+          <ul>
+              <li>Data Source: <a href='http://droughtmonitor.unl.edu/'>U.S. Drought Monitor</a></li>
+              <li>
+                Platforms:
+                <a href='https://www.postgresql.org/'>D3.js</a>,
+                <a href='http://postgis.net/'>SQL/PostGIS</a>,
+                <a href='https://www.python.org/'>Python</a>
+              </li>
+              <li>See the <a href='https://github.com/FergusDevelopmentLLC/us-weekly-drought-conditions'>github repo</a> for full details</li>
+          </ul>
+          <a class="btn btn-primary" href="http://104.236.16.91:8650/us-weekly-drought-conditions/">Map</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Three -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="http://104.236.16.91:8641/">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/fedlands_800x400.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>U.S. Federal Lands (GeoDev Web Stack)</h3>
+          <p>This project involved building a full web stack from database to front end. Static geojson, PostGIS, and MongoDB queries are compared to deliver large geospatial datasets.</p>
+          <ul>
+              <li>Data Source(s): <a href='https://catalog.data.gov/dataset/federal-lands-of-the-united-states-direct-download'>Data.gov</a></li>
+              <li>
+                Platforms: <a href='https://www.postgresql.org/'>PostgreSQL</a>,
+                <a href='http://postgis.net/'>PostGIS</a>,
+                <a href='https://www.mongodb.com/'>MongoDB</a>,
+                <a href='https://en.wikipedia.org/wiki/Representational_state_transfer'>REST API</a>,
+                <a href='https://nodejs.org'>Node.js</a>,
+                <a href='https://expressjs.com/'>Express.js</a>,
+                <a href='http://knexjs.org/'>Knex.js</a>,
+                <a href='http://mongoosejs.com/'>Mongoose.js</a>,
+                <a href='https://github.com/hapijs/joi'>Joi.js</a>,
+                <a href='http://getbootstrap.com/'>Bootstrap</a>,
+                <a href='https://vuejs.org/'>Vue.js</a>
+              </li>
+              <li>See the <a href='https://github.com/FergusDevelopmentLLC/geodev-node-rest'>github repo</a> for full details</li>
+          </ul>
+          <a class="btn btn-primary" href="http://104.236.16.91:8641/">Map</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Four -->
+      <div class="row">
+
+        <div class="col-md-7">
+          <a href="http://104.236.16.91:8650/us-powerplants/">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/power_800x400.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Power Plants of the United States</h3>
+          <p>Proportional symbol map comparing three major types of power plant in the United States.</p>
+          <ul>
+              <li>Data Source(s): <a href='https://www.eia.gov/electricity/data/eia923/'>U.S. Department of Energy</a></li>
+              <li>
+                Platforms:
+                <a href='http://leafletjs.com/'>Leaflet.js</a>,
+                <a href='http://geojson.org/'>Geojson</a>
+              </li>
+              <li>See the <a href='https://github.com/FergusDevelopmentLLC/us-powerplants'>github repo</a> for details</li>
+          </ul>
+          <a class="btn btn-primary" href="http://104.236.16.91:8650/us-powerplants/">Map</a>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Pagination -->
+      <ul class="pagination justify-content-center">
+        <!-- <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li> -->
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="page2.html">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="page2.html" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Fergus Development LLC 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
