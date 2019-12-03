@@ -17,3 +17,10 @@ body {
 .pagination {
   margin-bottom: 15px;
 }
+
+.callout {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  background-color: #f7e796;
+  padding: .4rem 0 .4rem 0;
+}
