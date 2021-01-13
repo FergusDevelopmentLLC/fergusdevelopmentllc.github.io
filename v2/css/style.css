@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  box-sizing: content-box;
+  max-width: 960px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9em;
+  background: black;
+  display: grid;
+  grid-template-areas: "header"
+                       "home"
+                       "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 
+                      1fr
+                      30px;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: .3em;
+    color: darkblue;
+}
+
+ul {
+  list-style: none;
+  margin-top: .5em;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+
+.home {
+  grid-area: home;
+  display: grid;
+  grid-template-areas: "main featured";
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.full {
+  grid-area: home;
+  background: white;
+  display: grid;
+  grid-template-areas: "main";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.header { 
+  grid-area: header;
+  background: red;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header-content {
+  width: 100%;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 0 0 5px #FF0000;
+}
+
+.nav {
+  flex-basis: 80%;
+  font-size: 1.2rem;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:link {
+  color: lightyellow;
+}
+
+.nav a:visited {
+  color: lightyellow;
+}
+
+.nav a:hover {
+  color: lightyellow;
+  text-decoration: underline;
+}
+
+.nav a:active {
+  color: lightyellow;
+  text-decoration: underline;
+}
+
+.nav-title {
+  margin: 0 0 0 1em;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.header-welcome {
+  text-align: right;
+  margin: .2em 1em .5em 0;
+  color: lightyellow;
+}
+
+.header-welcome a {
+  color: lightyellow;
+}
+
+.nav ul {
+  display: flex;
+  margin: .2rem .5rem 0 2.5rem;
+  justify-content: flex-start;
+}
+
+.nav ul li {
+  margin-left: 1rem;
+  white-space: nowrap;
+}
+
+.footer { 
+  grid-area: footer;
+  background: red;
+  text-align: center;
+  padding-top: .2em;
+  color: lightyellow;
+}
+
+.main { 
+  grid-area: main;
+  padding: 3em;
+  background: #eee;
+  min-width: 400px;
+}
+
+.full .main {
+  margin: auto;
+}
+
+.right { 
+  grid-area: featured;
+  border-left: 1px solid #d8d8d8;
+  padding: .5rem 1.25rem 0 1.25rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right h3 { 
+  margin: 0 0 .5rem 0;
+}
+
+.right ul li {
+  margin-bottom: .75rem;
+}
+
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .nav-title {
+      font-size: 1.5rem;
+      margin: 0 0 .3rem 0;
+  }
+
+  .nav-wrapper {
+      flex-direction: column;
+  }
+  
+  .nav ul {
+      justify-content: center;
+      margin: 0 0 .2rem 0;
+  }
+  
+  .nav ul li {
+      margin: 0 .75rem 0 .5em;
+      white-space: nowrap;
+      font-size: .8rem;
+  }
+
+  .header-welcome {
+      text-align: center;
+      margin: .2em 0 .3em 0;
+      font-size: .75rem;
+  }
+
+  .home {
+      grid-template-areas: "featured" "main";
+      grid-template-columns: 100%;
+      grid-template-rows: auto 
+                          auto;
+  }
+
+  .latest-wrapper {
+      flex-direction: column;
+  }
+
+  .latest-img {
+      width: 75%;
+      margin: 0 auto 1em auto;
+  }
+  
+  .types {
+      flex-direction: column;
+  }
+
+  .types-wrapper h3 {
+      text-align: center;
+  }
+
+  .type {
+      width: 50%;
+      margin: 0 auto 1em auto;
+  }
+
+  .right {
+      border: 0;
+  }
+
+  .right h3 {
+      text-align: center;
+  }
+  
+  .feature {
+      width: 50%;
+      margin: 0 auto 1em auto;
+  }
+
+  .game-detail-wrapper {
+      flex-direction: column;
+  }
+
+  .game-detail-image-wrapper {
+      order: 0;
+      margin: 0 0 1rem 0;
+      width: 75%;
+      align-self: center;
+  }
+
+  .show-wrapper {
+      order: 1;
+  }
+
+  .course-listing-item {
+      min-width: 75%;
+  }
+  
+  .header {
+      border: 0;
+  }
+
+  .main {
+      border: 0;
+  }
+
+  .footer {
+      border: 0;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  body {
+      grid-template-rows: auto 
+                          1fr
+                          30px;
+  }
+  .nav ul {
+      flex-direction: column;
+  }
+
+  .nav-wrapper {
+      align-items: flex-start;
+  }
+  
+  .nav-title {
+      margin: 0 0 0 8px;
+  }
+}
+
