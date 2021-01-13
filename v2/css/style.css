@@ -13,7 +13,7 @@ body {
   max-width: 960px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: .9em;
-  background: black;
+  background: #808080;
   display: grid;
   grid-template-areas: "header"
                        "home"
@@ -47,12 +47,11 @@ p {
   margin-bottom: 1rem;
 }
 
-
 .home {
   grid-area: home;
   display: grid;
-  grid-template-areas: "main featured";
-  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "featured main";
+  grid-template-columns: 1fr 3fr ;
   grid-template-rows: 1fr;
 }
 
@@ -67,10 +66,9 @@ p {
 
 .header { 
   grid-area: header;
-  background: red;
-  border-bottom: 1px solid lightgray;
+  background: rgb(2,0,36);
+  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(52,58,64,1) 62%, rgba(195,195,193,1) 100%);
   display: flex;
-  align-items: flex-end;
 }
 
 .header-content {
@@ -80,19 +78,19 @@ p {
 .nav-wrapper {
   display: flex;
   align-items: center;
+  margin: 1.5rem 0 0 2rem;
 }
 
 .nav-logo {
-  flex-basis: 20%;
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-shadow: 0 0 5px #FF0000;
 }
 
 .nav {
-  flex-basis: 80%;
-  font-size: 1.2rem;
+  flex-basis: 50%;
+  font-size: .9rem;
 }
 
 .nav a {
@@ -100,45 +98,35 @@ p {
 }
 
 .nav a:link {
-  color: lightyellow;
+  color: #fff;
 }
 
 .nav a:visited {
-  color: lightyellow;
+  color: #fff;
 }
 
 .nav a:hover {
-  color: lightyellow;
+  color: #fff;
   text-decoration: underline;
 }
 
 .nav a:active {
-  color: lightyellow;
+  color: #fff;
   text-decoration: underline;
 }
 
 .nav-title {
-  margin: 0 0 0 1em;
-  font-size: xx-large;
+  margin: 0;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #fff;
   white-space: nowrap;
 }
 
-.header-welcome {
-  text-align: right;
-  margin: .2em 1em .5em 0;
-  color: lightyellow;
-}
-
-.header-welcome a {
-  color: lightyellow;
-}
-
 .nav ul {
   display: flex;
-  margin: .2rem .5rem 0 2.5rem;
-  justify-content: flex-start;
+  margin: 0 2rem 0 0;
+  justify-content: flex-end;
 }
 
 .nav ul li {
@@ -148,7 +136,8 @@ p {
 
 .footer { 
   grid-area: footer;
-  background: red;
+  background: rgb(2,0,36);
+  background: linear-gradient(236deg, rgba(2,0,36,1) 0%, rgba(52,58,64,1) 62%, rgba(195,195,193,1) 100%);
   text-align: center;
   padding-top: .2em;
   color: lightyellow;
@@ -165,10 +154,10 @@ p {
   margin: auto;
 }
 
-.right { 
+.right, .left { 
   grid-area: featured;
   border-left: 1px solid #d8d8d8;
-  padding: .5rem 1.25rem 0 1.25rem;
+  padding: .25rem .8rem 0 .8rem;
   background: white;
   display: flex;
   flex-direction: column;
@@ -182,6 +171,58 @@ p {
 .right ul li {
   margin-bottom: .75rem;
 }
+
+.left h3 { 
+  margin: 0 0 .5rem 0;
+}
+
+.left ul li {
+  margin-bottom: .75rem;
+}
+
+.blog-subtitle, .blog-more {
+  font-size: .8rem
+}
+
+.blog-date {
+  margin: .5rem 0 .4rem 0;
+  font-size: .7rem;
+  color: #8087a1
+}
+
+
+
+aside li {
+  padding: 0 0 .75rem 0;
+}
+
+aside img {
+  border: 1px solid #bdbdbb;
+}
+
+
+aside a {
+  text-decoration: none;
+}
+
+aside a:link {
+  color: #483729;
+}
+
+aside a:visited {
+  color: #483729;
+}
+
+aside a:hover {
+  color: #483729;
+  text-decoration: underline;
+}
+
+aside a:active {
+  color: #483729;
+  text-decoration: underline;
+}
+
 
 
 /* ---------------------------------------------- */
@@ -210,39 +251,11 @@ p {
       font-size: .8rem;
   }
 
-  .header-welcome {
-      text-align: center;
-      margin: .2em 0 .3em 0;
-      font-size: .75rem;
-  }
-
   .home {
       grid-template-areas: "featured" "main";
       grid-template-columns: 100%;
       grid-template-rows: auto 
                           auto;
-  }
-
-  .latest-wrapper {
-      flex-direction: column;
-  }
-
-  .latest-img {
-      width: 75%;
-      margin: 0 auto 1em auto;
-  }
-  
-  .types {
-      flex-direction: column;
-  }
-
-  .types-wrapper h3 {
-      text-align: center;
-  }
-
-  .type {
-      width: 50%;
-      margin: 0 auto 1em auto;
   }
 
   .right {
