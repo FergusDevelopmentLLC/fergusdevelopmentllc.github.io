@@ -83,13 +83,6 @@ p {
   margin: 1.5rem 0 0 2rem;
 }
 
-.nav-logo {
-  flex-basis: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .nav {
   flex-basis: 50%;
   font-size: .9rem;
@@ -119,10 +112,11 @@ p {
 
 .nav-title {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #fff;
   white-space: nowrap;
+  flex-basis: 50%;
 }
 
 .nav ul {
@@ -149,7 +143,6 @@ p {
   grid-area: main;
   padding: .9rem .9rem;
   background: #fff;
-  min-width: 400px;
 }
 
 .full .main {
@@ -345,6 +338,14 @@ main a:hover {
   margin-bottom: 1rem;
 }
 
+.feature-header {
+  display: none;
+}
+
+.portfolio-header {
+  display: none;
+}
+
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
@@ -357,7 +358,9 @@ main a:hover {
   }
 
   .nav-wrapper {
-      flex-direction: column;
+    flex-direction: column;
+    margin: 1rem auto;
+    align-items: center !important;
   }
   
   .nav ul {
@@ -372,10 +375,9 @@ main a:hover {
   }
 
   .home {
-      grid-template-areas: "featured" "main";
+      grid-template-areas: "main" "featured";
       grid-template-columns: 100%;
-      grid-template-rows: auto 
-                          auto;
+      grid-template-rows: auto auto;
   }
 
   .right {
@@ -391,25 +393,6 @@ main a:hover {
       margin: 0 auto 1em auto;
   }
 
-  .game-detail-wrapper {
-      flex-direction: column;
-  }
-
-  .game-detail-image-wrapper {
-      order: 0;
-      margin: 0 0 1rem 0;
-      width: 75%;
-      align-self: center;
-  }
-
-  .show-wrapper {
-      order: 1;
-  }
-
-  .course-listing-item {
-      min-width: 75%;
-  }
-  
   .header {
       border: 0;
   }
@@ -424,6 +407,34 @@ main a:hover {
 
   aside img {
     width: 65%;
+  }
+
+  .nav-title {
+    font-size: 1rem;
+  }
+
+  aside img {
+    width: 70%;
+    margin: auto;
+  }
+
+  aside a {
+    text-decoration: underline;
+  }
+
+  .feature-header {
+    display: block;
+    padding: .5rem 0 0;
+  }
+
+  .portfolio-header {
+    display: block;
+    padding: .5rem 0 0;
+    text-align: center;
+  }
+
+  .right, .left { 
+    align-items: center;
   }
 
 }
