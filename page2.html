@@ -1,331 +1,123 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-  <head>
+<head>
+  <meta charset="UTF-8">
+  <title>Will Carter: Full Stack Web Developer</title>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Will Carter: Web development and visualizations</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/1-col-portfolio.css" rel="stylesheet">
-
-    <style>
-      body {
-        font-family: 'Arimo', sans-serif;
-      }
-
-      h3 {
-        font-size: 1.1em;
-        font-weight: bold;
-      }
-
-      p {
-        font-size: .9em;
-      }
-
-      li {
-        font-size: .8em;
-      }
-
-      /*==========  Non-Mobile First Method  ==========*/
-
-      /* Small Devices, Tablets */
-      @media only screen and (max-width : 768px) {
-        .navbar-brand {
-          font-size: 1em;
-        }
-      }
-
-      /* Extra Small Devices, Phones */
-      @media only screen and (max-width : 480px) {
-        .navbar-brand {
-          font-size: .6em;
-        }
-      }
-
-    </style>
-  </head>
-
-  <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Will Carter: Full Stack Web Developer</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="nav-wrapper">
+        <div class="nav-title">Will Carter: Full Stack Web Developer</div>
+        <div class="nav">
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12 callout">
-          For most recent projects, please visit my <a href='https://will-carter.medium.com/'> blog</a>.
-        </div>
+    </div>
+  </header>
+  <div class="home">
+    <main class="main">
+      <h3 class="portfolio-header">Portfolio</h3> 
+      <div class='portfolio-item'>
+        <h3>GamesGuide</h3>
+        <p class="portfolio-desc"><a href='https://gamesguide.herokuapp.com'>GamesGuide</a> is a demonstration Ruby/Sinatra web application created to keep track of a board game collection. Users can login, add games, comment on games and tag them.</p>
+        <div><a href="https://gamesguide.herokuapp.com/"><img src="images/games_guide_800x400.png" alt="gamesguide.herokuapp.com" class="portfolio-img"></a></div>
+        <ul>
+          <li>
+            Platforms:
+            <a href='https://github.com/sinatra/sinatra/'>Sinatra</a>
+          </li>
+          <li>Responsive design using CSS <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox'>Flexbox</a> and <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout'>Grid layouts</a></li>
+          <li>Blog post: <a href='https://will-carter.medium.com/building-a-games-guide-5c1791524ca5'>Building a Games Guide</a></li>
+          <li>See the <a href='https://github.com/FergusDevelopmentLLC/GameGuide'>Github repo</a> for details</li>
+        </ul>
+        <div><a class="btn info" href="https://gamesguide.herokuapp.com/">Demo</a></div>
       </div>
 
-      <div class="row">
-        <div class="col-md-7">
-          <a href="https://gamesguide.herokuapp.com/">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/games_guide_800x400.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>GamesGuide</h3>
-          <p>GamesGuide is a demonstration Ruby/Sinatra web application created to keep track of a board game collection. Users can login, add games, comment on games and tag them.</p>
-          <ul>
-            <li>
-              Platforms:
-              <a href='https://github.com/sinatra/sinatra/'>Sinatra</a>
-            </li>
-            <li>Responsive design using CSS <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox'>Flexbox</a> and <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout'>Grid layouts</a></li>
-            <li>Blog post: <a href='https://will-carter.medium.com/building-a-games-guide-5c1791524ca5'>Building a Games Guide</a></li>
-            <li>See the <a href='https://github.com/FergusDevelopmentLLC/GameGuide'>Github repo</a> for details</li>
-          </ul>
-          <a class="btn btn-primary" href="https://gamesguide.herokuapp.com/">Demo</a>
-        </div>
+      <div class='portfolio-item'>
+        <h3>Starbucks Location Density: 1991-2017</h3>
+        <p class="portfolio-desc">This Leaflet map uses hexbinning to convey Starbucks location density. Hexbins are redrawn to make them appropriate to zoom level.</p>
+        <div><a href="http://104.236.16.91:8660/starbucks/"><img src="images/starbucks_800x400.png" alt="USFS-DST" class="portfolio-img"></a></div>
+        <ul>
+          <li>Data Source(s): <a href='http://www.starbuckseverywhere.net/StoreOpeningDates.htm'>Starbuckseverywhere.net</a></li>
+          <li>
+            Platforms:
+            <a href='https://www.python.org/'>Python</a>,
+            <a href='http://leafletjs.com/'>Leaflet.js</a>,
+            <a href='http://geojson.org/'>Geojson</a>
+          </li>
+          <li>See the <a href='https://github.com/FergusDevelopmentLLC/starbucks'>Github repo</a> for details</li>
+        </ul>
+        <div><a class="btn info" href="http://104.236.16.91:8660/starbucks/">View Map</a></div>
       </div>
 
-      <hr />
-
-      <div class="row">
-        <div class="col-md-7">
-          <a href="http://104.236.16.91:8660/starbucks/">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/starbucks_800x400.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Starbucks Location Density: 1991-2017</h3>
-          <p>This Leaflet map uses hexbinning to convey Starbucks location density. Hexbins are redrawn to make them appropriate to zoom level.</p>
-          <ul>
-            <li>Data Source(s): <a href='http://www.starbuckseverywhere.net/StoreOpeningDates.htm'>Starbuckseverywhere.net</a></li>
-            <li>
-              Platforms:
-              <a href='https://www.python.org/'>Python</a>,
-              <a href='http://leafletjs.com/'>Leaflet.js</a>,
-              <a href='http://geojson.org/'>Geojson</a>
-            </li>
-            <li>See the <a href='https://github.com/FergusDevelopmentLLC/starbucks'>Github repo</a> for details</li>
-          </ul>
-
-          <a class="btn btn-primary" href="http://104.236.16.91:8660/starbucks/">Map</a>
-        </div>
+      <div class='portfolio-item'>
+        <h3>Top Boy/Girl names of the Last Century (1910-2016)</h3>
+        <p class="portfolio-desc">This D3.js based map shows a different perspective on the names data. The map shows top Boy/Girl name occurrences for each year by state. A Python script processed the raw data from the Social Security Administration.</p>
+        <div><a href="http://104.236.16.91:8645/top-names"><img src="images/top_names_800x400.png" alt="hikefinder.net" class="portfolio-img"></a></div>
+        <ul>
+          <li>Data Source: <a href='https://www.ssa.gov/oact/babynames/limits.html'>U.S. Social Security Administration</a></li>
+          <li>
+            Platforms:
+            <a href='https://d3js.org/'>D3.js</a>,
+            <a href='https://www.python.org/'>Python</a>,
+            <a href='https://www.w3.org/Graphics/SVG/'>SVG</a>,
+            <a href='https://github.com/topojson/topojson'>Topojson</a>
+          </li>
+          <li>See the <a href='https://github.com/FergusDevelopmentLLC/top-names-map'>Github repo</a> for details</li>
+        </ul>
+        <div><a class="btn info" href="http://104.236.16.91:8645/top-names">Demo</a></div>
       </div>
 
-      <hr />
-
-      <div class="row">
-        <div class="col-md-7">
-          <a href="http://104.236.16.91:8645/top-names">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/top_names_800x400.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Top Boy/Girl names of the Last Century (1910-2016)</h3>
-          <p>This D3.js based map shows a different perspective on the names data. The map shows top Boy/Girl name occurrences for each year by state. A Python script processed the raw data from the Social Security Administration.</p>
-          <ul>
-              <li>Data Source: <a href='https://www.ssa.gov/oact/babynames/limits.html'>U.S. Social Security Administration</a></li>
-              <li>
-                Platforms:
-                <a href='https://d3js.org/'>D3.js</a>,
-                <a href='https://www.python.org/'>Python</a>,
-                <a href='https://www.w3.org/Graphics/SVG/'>SVG</a>,
-                <a href='https://github.com/topojson/topojson'>Topojson</a>
-              </li>
-              <li>See the <a href='https://github.com/FergusDevelopmentLLC/top-names-map'>Github repo</a> for details</li>
-          </ul>
-          <a class="btn btn-primary" href="http://104.236.16.91:8645/top-names">Map</a>
-        </div>
+      <div class='portfolio-item'>
+        <h3>U.S. Federal Lands (GeoDev Web Stack)</h3>
+        <p class="portfolio-desc">This project involved building a full web stack from database to front end. Static geojson, PostGRES, and PostGIS queries are compared to deliver large geospatial datasets.</p>
+        <div><a href="http://104.236.16.91:8641/"><img src="images/fedlands_800x400.png" alt="http://skillcraft.herokuapp.com/" class="portfolio-img"></a></div>
+        <ul>
+          <li>Data Source(s): <a href='https://catalog.data.gov/dataset/federal-lands-of-the-united-states-direct-download'>Data.gov</a></li>
+          <li>
+            Platforms: <a href='https://www.postgresql.org/'>PostgreSQL</a>,
+            <a href='http://postgis.net/'>PostGIS</a>,
+            <!-- <a href='https://www.mongodb.com/'>MongoDB</a>, -->
+            <a href='https://en.wikipedia.org/wiki/Representational_state_transfer'>REST API</a>,
+            <a href='https://nodejs.org'>Node.js</a>,
+            <a href='https://expressjs.com/'>Express.js</a>,
+            <a href='http://knexjs.org/'>Knex.js</a>,
+            <a href='http://mongoosejs.com/'>Mongoose.js</a>,
+            <a href='https://github.com/hapijs/joi'>Joi.js</a>,
+            <a href='http://getbootstrap.com/'>Bootstrap</a>,
+            <a href='https://vuejs.org/'>Vue.js</a>
+          </li>
+          <li>See the <a href='https://github.com/FergusDevelopmentLLC/geodev-node-rest'>Github repo</a> for full details</li>
+        </ul>
+        <div><a class="btn info" href="http://104.236.16.91:8641/">Map</a></div>
       </div>
 
-      <hr />
-
-      <div class="row">
-        <div class="col-md-7">
-          <a href="http://104.236.16.91:8641/">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/fedlands_800x400.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>U.S. Federal Lands (GeoDev Web Stack)</h3>
-          <p>This project involved building a full web stack from database to front end. Static geojson, PostGRES, and PostGIS queries are compared to deliver large geospatial datasets.</p>
-          <ul>
-              <li>Data Source(s): <a href='https://catalog.data.gov/dataset/federal-lands-of-the-united-states-direct-download'>Data.gov</a></li>
-              <li>
-                Platforms: <a href='https://www.postgresql.org/'>PostgreSQL</a>,
-                <a href='http://postgis.net/'>PostGIS</a>,
-                <!-- <a href='https://www.mongodb.com/'>MongoDB</a>, -->
-                <a href='https://en.wikipedia.org/wiki/Representational_state_transfer'>REST API</a>,
-                <a href='https://nodejs.org'>Node.js</a>,
-                <a href='https://expressjs.com/'>Express.js</a>,
-                <a href='http://knexjs.org/'>Knex.js</a>,
-                <a href='http://mongoosejs.com/'>Mongoose.js</a>,
-                <a href='https://github.com/hapijs/joi'>Joi.js</a>,
-                <a href='http://getbootstrap.com/'>Bootstrap</a>,
-                <a href='https://vuejs.org/'>Vue.js</a>
-              </li>
-              <li>See the <a href='https://github.com/FergusDevelopmentLLC/geodev-node-rest'>Github repo</a> for full details</li>
-          </ul>
-          <a class="btn btn-primary" href="http://104.236.16.91:8641/">Map</a>
-        </div>
+      <div class='portfolio-item'>
+        <h3>U.S. 2017 Weekly Drought Conditions</h3>
+        <p class="portfolio-desc">This D3.js based map shows drought conditions in the U.S. by week during 2017. The speed of D3.js can seen by cycling through the geospatial data for each week.</p>
+        <div><a href="http://104.236.16.91:8650/us-weekly-drought-conditions/"><img src="images/drought_v6.gif" alt="http://104.236.16.91:8650/us-weekly-drought-conditions/" class="portfolio-img"></a></div>
+        <ul>
+          <li>Data Source: <a href='http://droughtmonitor.unl.edu/'>U.S. Drought Monitor</a></li>
+          <li>
+            Platforms:
+            <a href='https://d3js.org/'>D3.js</a>,
+            <a href='http://postgis.net/'>SQL/PostGIS</a>,
+            <a href='https://www.python.org/'>Python</a>
+          </li>
+          <li>See the <a href='https://github.com/FergusDevelopmentLLC/us-weekly-drought-conditions'>Github repo</a> for details</li>
+        </ul>
+        <div><a class="btn info" href="http://104.236.16.91:8650/us-weekly-drought-conditions/">Map</a></div>
       </div>
-
-      <hr />
-
-      <div class="row">
-        <div class="col-md-7">
-          <a href="http://104.236.16.91:8650/us-weekly-drought-conditions/">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/drought_v6.gif" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>U.S. 2017 Weekly Drought Conditions</h3>
-          <p>This D3.js based map shows drought conditions in the U.S. by week during 2017. The speed of D3.js can seen by cycling through the geospatial data for each week.</p>
-          <ul>
-              <li>Data Source: <a href='http://droughtmonitor.unl.edu/'>U.S. Drought Monitor</a></li>
-              <li>
-                Platforms:
-                <a href='https://d3js.org/'>D3.js</a>,
-                <a href='http://postgis.net/'>SQL/PostGIS</a>,
-                <a href='https://www.python.org/'>Python</a>
-              </li>
-              <li>See the <a href='https://github.com/FergusDevelopmentLLC/us-weekly-drought-conditions'>Github repo</a> for details</li>
-          </ul>
-          <a class="btn btn-primary" href="http://104.236.16.91:8650/us-weekly-drought-conditions/">Map</a>
-        </div>
-      </div>
-
-      <!-- <hr/>
-
-      <div class="row">
-        <div class="col-md-7">
-          <a href="http://s3.amazonaws.com/gameofgis.com/posts/oilgas/colorado/index.html">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/oil_gas_800x400.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Colorado Oil and Gas Maps</h3>
-          <p>These Leaflet maps show the progression and density of Oil and Gas wells in Colorado.</p>
-          <ul>
-            <li>Detailed blog post describing process and reaction: <a href="https://gameofgis.com/2015/12/12/colorado-oilgas-wells/">Colorado Oil/Gas Wells Over Time</a></li>
-            <li>
-              Platforms:
-              <a href='https://www.python.org/'>Python</a>,
-              <a href='https://www.postgresql.org/'>PostgreSQL</a>,
-              <a href='http://postgis.net/'>PostGIS</a>,
-              <a href='http://leafletjs.com/'>Leaflet.js</a>
-            </li>
-            <li>See the <a href='https://github.com/FergusDevelopmentLLC/oil-gas'>Github repo</a> for details</li>
-          </ul>
-          <a class="btn btn-primary" href="http://s3.amazonaws.com/gameofgis.com/posts/oilgas/colorado/index.html">Map 1</a>
-          <a class="btn btn-primary" href="http://104.236.16.91:8642/">Map 2</a>
-        </div>
-      </div> -->
-
-      <!-- <hr />
-
-      <div class="row">
-        <div class="col-md-7">
-          <a href="http://104.236.16.91:8650/us-powerplants/">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/power_800x400.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Power Plants of the United States</h3>
-          <p>Proportional symbol map comparing three major types of power plant in the United States.</p>
-          <ul>
-              <li>Data Source(s): <a href='https://www.eia.gov/electricity/data/eia923/'>U.S. Department of Energy</a></li>
-              <li>
-                Platforms:
-                <a href='http://leafletjs.com/'>Leaflet.js</a>,
-                <a href='http://geojson.org/'>Geojson</a>
-              </li>
-              <li>See the <a href='https://github.com/FergusDevelopmentLLC/us-powerplants'>Github repo</a> for details</li>
-          </ul>
-          <a class="btn btn-primary" href="http://104.236.16.91:8650/us-powerplants/">Map</a>
-        </div>
-      </div> -->
-
-      <!-- <hr />
-
-      <div class="row">
-        <div class="col-md-7">
-          <a href="https://willcarteruky.carto.com/builder/3f81fefc-17d4-11e7-80ee-0e3ff518bd15/embed">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/billboard_800x400.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>U.S. Billboard #1 Hit Singles 1970-1979</h3>
-          <p>Choropleth map showing the U.S. Billboard #1 hit singles by artist origin city between 1970-1979. Python script was written to scrape web sources and create local datasets.</p>
-          <ul>
-              <li>Data Sources: <a href="http://www.umdmusic.com/">Ultimate Music Database</a>, <a href="https://www.wikipedia.org/">Wikipedia</a>, <a href="https://www.census.gov/">U.S. Census</a>, <a href="http://www.noaa.gov/">NOAA</a>, <a href="http://www.naturalearthdata.com/">Natural Earth</a></li>
-              <li>
-                Platforms: <a href='https://carto.com/'>Carto</a>,
-                <a href='https://www.python.org/'>Python</a>
-              </li>
-          </ul>
-          <a class="btn btn-primary" href="https://willcarteruky.carto.com/builder/3f81fefc-17d4-11e7-80ee-0e3ff518bd15/embed">Map</a>
-        </div>
-      </div>
-
-      <hr /> -->
-
-      <!-- <div class="row">
-        <div class="col-md-7">
-          <a href="http://s3.amazonaws.com/gameofgis.com/posts/20151228_mlbtv_blackout/index.html">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="images/baseball_800x400.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Iowa Is Blacked Out</h3>
-          <p>This Leaflet based map shows Major League Baseballs blackout areas. Various scripting and web scraping techniques were used collect and create data for this map.</p>
-          <ul>
-              <li>Blog post describing process: <a href="https://gameofgis.com/2016/01/25/iowa-is-blacked-out/">Game of GIS: Iowa is blacked out</a></li>
-              <li>
-                Platforms: <a href='https://www.postgresql.org/'>PostgreSQL</a>,
-                <a href='http://postgis.net/'>PostGIS</a>,
-                <a href='http://leafletjs.com/'>Leaflet</a>
-              </li>
-          </ul>
-          <a class="btn btn-primary" href="http://s3.amazonaws.com/gameofgis.com/posts/20151228_mlbtv_blackout/index.html">Map</a>
-        </div>
-      </div> -->
-
-      <hr />
 
       <!-- Pagination -->
-      <ul class="pagination justify-content-center">
+      <ul class="pagination">
         <li class="page-item">
           <a class="page-link" href="index.html" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
@@ -336,32 +128,39 @@
           <a class="page-link" href="index.html">1</a>
         </li>
         <li class="page-item">
-          <a class="page-link" href="#">2</a>
+          <a class="page-link" href="page2.html">2</a>
         </li>
-        <!-- <li class="page-item">
-          <a class="page-link" href="page2.html" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li> -->
       </ul>
+    </main>
+    <aside class="left">
+      <h3 class="feature-header">Recent blog posts</h3>
+      <ul>
+        <li>
+          <h4><a href='https://will-carter.medium.com/community-mojo-b989517e3c7e'>Community Mojo</a></h4>
+          <div class="blog-subtitle"><a href='https://will-carter.medium.com/community-mojo-b989517e3c7e'>Community Building using React Native and Firebase noSQL</a></div>
+          <div class="blog-date">Jan 11th</div>
+          <a href='https://will-carter.medium.com/community-mojo-b989517e3c7e'><img src='https://miro.medium.com/max/700/1*k6ZR4qmtcvnPPUN7zkLwRA.png' /></a>
+        </li>
+        <li>
+          <h4><a href='https://will-carter.medium.com/javascript-closures-ba64b241ec68'>JavaScript Closures</a></h4>
+          <div class="blog-subtitle"><a href='https://will-carter.medium.com/javascript-closures-ba64b241ec68'>Part 1: The Basics</a></div>
+          <div class="blog-date">Jan 4th</div>
+          <a href='https://will-carter.medium.com/javascript-closures-ba64b241ec68'><img src='https://miro.medium.com/max/700/1*-dlQyugUOFTrkyOM5la_SQ.png' /></a>
+        </li>
+        <li>
+          <h4><a href='https://will-carter.medium.com/truthy-and-falsey-values-ae3c49cdbfa9'>Primitives, Truthy and Falsey</a></h4>
+          <div class="blog-subtitle"><a href='https://will-carter.medium.com/truthy-and-falsey-values-ae3c49cdbfa9'>How does JavaScript compare to Ruby?</a></div>
+          <div class="blog-date">Dec 21, 2020</div>
+          <a href='https://will-carter.medium.com/truthy-and-falsey-values-ae3c49cdbfa9'><img src='https://miro.medium.com/max/2400/1*PvtOVNzjmNflhlKz_r3v8A.png' /></a>
+        </li>
+      </ul>
+      <div class='blog-more'><a href=''>More blog posts...</a></div>
 
-    </div>
-    <!-- /.container -->
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Fergus Development LLC 2020</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-  </body>
+    </aside>
+  </div>
+  
+  <footer class="footer">&copy; 2021 Fergus Development LLC</footer>
+</body>
 
 </html>
