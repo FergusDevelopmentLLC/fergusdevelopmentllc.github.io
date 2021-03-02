@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>U.S. Congressional Districts</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.1.1/mapbox-gl.js'></script>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.1.1/mapbox-gl.css' rel='stylesheet' />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id='map'></div>
+
+  <script>
+
+    const getCenterFrom = mapBounds => [(mapBounds[0] + mapBounds[2]) / 2, (mapBounds[1] + mapBounds[3]) / 2]
+  
+    const params = new URLSearchParams(location.search)
+    let state = 'IN'
+    if (params.has('state')) state = params.get('state')
+
+    mapboxgl.accessToken = 'pk.eyJ1Ijoid2lsbGNhcnRlciIsImEiOiJjamV4b2g3Z2ExOGF4MzFwN3R1dHJ3d2J4In0.Ti-hnuBH8W4bHn7k6GCpGw'
+
+    // get bounding box: http://bboxfinder.com
+    const mapBounds = [-130.429688, 23.563987, -63.105469, 52.268157]//Southwest corner, Northeast corner
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: `mapbox://styles/mapbox/bright-v9`,
+      center: getCenterFrom(mapBounds),
+      zoom: 3
+    })
+
+    map.on('load', () => {
+
+      map.addSource('districts', {
+        type: 'geojson',
+        data: `https://21u9zetks1.execute-api.us-east-1.amazonaws.com/dev/districtsForState/${state}`
+      })
+
+      map.addLayer({
+        id: 'districts-layer',
+        source: 'districts',
+        type: 'fill',
+        layout: {},
+        paint: {
+          'fill-color': '#f08',
+          'fill-opacity': 0.4
+        }
+      })
+
+    })
+
+    let zoomed = false
+    map.on('sourcedata', (e) => {
+      if (!zoomed && map.getSource('districts') && map.isSourceLoaded('districts')) {
+        
+        const district = map.querySourceFeatures('districts').find(district => true)//find the first district for state
+
+        if(district) {
+          
+          map.flyTo({
+            center: [district.geometry.coordinates[0][0][0], district.geometry.coordinates[0][0][1]],
+            zoom: 5.5,
+            essential: true
+          })//fly to the first coordinate in the first district polygon
+
+          zoomed = true
+        }
+      }
+    })
+
+  </script>
+</body>
+</html>
